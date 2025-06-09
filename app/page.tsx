@@ -5,36 +5,6 @@ import Image from "next/image"
 
 const teamMembers = [
   {
-    name: "Ben",
-    alias: "The Deployment Dynamo",
-    image: "/images/ben.png",
-    hometown: "Silicon Valley, CA",
-    costume: "Midnight Blue Power Suit with Lightning Bolt Tie",
-    powers: [
-      "Instant Infrastructure Scaling",
-      "Zero-Downtime Deployment Vision",
-      "Client Confidence Amplification",
-      "Technical Jargon Translation",
-    ],
-    bio: "Once a mild-mannered developer, Ben gained his powers after being struck by a bolt of pure serverless energy during a late-night deployment. Now he can scale applications with a single thought and deploy faster than the speed of light.",
-    color: "from-blue-600 to-purple-600",
-  },
-  {
-    name: "Harry",
-    alias: "The Happiness Hero",
-    image: "/images/harry.png",
-    hometown: "Austin, TX",
-    costume: "Golden Suit of Perpetual Joy with Laughter-Powered Cape",
-    powers: [
-      "Infectious Enthusiasm",
-      "Deal-Closing Charisma",
-      "Stress Neutralization Field",
-      "Team Morale Multiplication",
-    ],
-    bio: "Harry discovered his powers at his own wedding when his joy became so contagious it solved three client disputes simultaneously. His laughter can literally power Vercel's edge functions.",
-    color: "from-yellow-500 to-orange-500",
-  },
-  {
     name: "Alex",
     alias: "The Digital Phantom",
     image: "/images/alex.png",
@@ -48,21 +18,6 @@ const teamMembers = [
     ],
     bio: "Alex was digitized during a freak accident involving a quantum computer and a cup of coffee. Now existing partially in the digital realm, they can interface directly with any system and see the true structure of code.",
     color: "from-gray-700 to-black",
-  },
-  {
-    name: "Kevin",
-    alias: "The Strategy Sentinel",
-    image: "/images/kevin.png",
-    hometown: "Boston, MA",
-    costume: "Classic Navy Tactical Suit with Strategic Planning Visor",
-    powers: [
-      "Future Market Prediction",
-      "Risk Assessment Vision",
-      "Strategic Planning Acceleration",
-      "Competitive Analysis Radar",
-    ],
-    bio: "Kevin gained his abilities after discovering an ancient business strategy tome in Harvard's library. He can now see multiple timeline outcomes and always knows the perfect strategic move.",
-    color: "from-indigo-600 to-blue-700",
   },
   {
     name: "Carson",
@@ -80,21 +35,6 @@ const teamMembers = [
     color: "from-green-500 to-teal-600",
   },
   {
-    name: "John",
-    alias: "The Ginger Guardian",
-    image: "/images/john.png",
-    hometown: "Dublin, Ireland",
-    costume: "Emerald Executive Armor with Celtic Power Patterns",
-    powers: [
-      "Unbreakable Determination",
-      "Problem-Solving Intuition",
-      "Team Unity Amplification",
-      "Ancient Wisdom Access",
-    ],
-    bio: "John's powers awakened when he touched a mystical shamrock during a client meeting in Dublin. His Celtic heritage grants him the wisdom of ages and an unshakeable resolve that inspires entire teams.",
-    color: "from-emerald-600 to-green-700",
-  },
-  {
     name: "Angelo",
     alias: "The Vision Virtuoso",
     image: "/images/angelo.png",
@@ -109,21 +49,6 @@ const teamMembers = [
     bio: "Angelo's artistic soul merged with pure creative energy during a late-night design session. His glasses now allow him to see the perfect solution to any problem, and his patterns can literally reshape reality.",
     color: "from-purple-600 to-pink-600",
   },
-  {
-    name: "Angela",
-    alias: "The Golden Goddess",
-    image: "/images/angela.png",
-    hometown: "Miami, FL",
-    costume: "Radiant Gold Battle Dress with Solar-Powered Accessories",
-    powers: [
-      "Solar-Powered Productivity",
-      "Golden Touch Deal Closing",
-      "Positive Energy Projection",
-      "Success Magnetism",
-    ],
-    bio: "Angela's powers emerged during a sunrise beach meeting when she absorbed pure solar energy. Her golden aura can turn any negotiation into gold, and her smile can power entire data centers.",
-    color: "from-yellow-400 to-amber-500",
-  },
 ]
 
 export default function MMeastTeamPage() {
@@ -135,18 +60,12 @@ export default function MMeastTeamPage() {
         <div className="relative container mx-auto px-4 py-20 text-center">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-8">
             <Shield className="w-4 h-4" />
-            VERCEL ACCOUNT EXECUTIVE DIVISION
+            Jordan's Big 3 AE's
           </div>
 
-          <h1 className="text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 mb-6 leading-tight">
-            THE MMEAST
-            <br />
-            <span className="text-yellow-400">SUPER TEAM</span>
-          </h1>
-
           <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto mb-12 leading-relaxed">
-            Eight extraordinary individuals with incredible powers, united by their mission to deploy the future and
-            scale the impossible. Meet the legendary heroes who make Vercel's edge network their playground.
+            Three awesome AE's extraordinary individuals with incredible powers, united by their mission to deploy the
+            future and scale the impossible. Meet the legendary heroes who make Vercel's edge network their playground.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 text-sm">
@@ -233,6 +152,21 @@ export default function MMeastTeamPage() {
               </CardContent>
             </Card>
           ))}
+        </div>
+      </div>
+
+      {/* Meme Section */}
+      <div className="container mx-auto px-4 py-16">
+        <div className="flex justify-center">
+          <div className="max-w-2xl">
+            <Image
+              src="/images/office-meme.png"
+              alt="The Office meme - Corporate needs you to find the difference between this picture and this picture. They're the same picture."
+              width={600}
+              height={600}
+              className="rounded-lg shadow-2xl"
+            />
+          </div>
         </div>
       </div>
 
